@@ -8,9 +8,6 @@ const Home = () => {
           <a href="/">
             <img className="logo" src="/assets/logo.jpg" alt="picture" />
           </a>
-          <button type="button" aria-label="Toggle navigation">
-            <span></span>
-          </button>
           <div>
             <ul>
               <li>
