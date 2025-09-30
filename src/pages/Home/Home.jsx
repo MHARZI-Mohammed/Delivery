@@ -6,7 +6,7 @@ const Home = () => {
       <nav className="nvbg">
         <div>
           <a href="/">
-            <img className="logo" src="/assets/logo.jpg" alt="picture" />
+            <img className="logo" src="/assets/logo.png" alt="picture" />
           </a>
           <div>
             <ul>

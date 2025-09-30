@@ -1,10 +1,10 @@
 .all{
-    background-color: rgba(222, 188, 188, 0.827);
+    background: linear-gradient(to right, #ea3131d0, #ffffff);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100vh;
 }
 .nvbg{
-    background-color: rgb(231, 103, 103);
+    background-color: #F6171C;
     height: 80px;
 }
 .logo{
@@ -27,7 +27,7 @@ li a{
     justify-content: space-between;
     padding-left: 100px;
     text-decoration: none;
-    color: black;
+    color: #fff;
     font-weight: 700;
     font-size: 17px;
 }
