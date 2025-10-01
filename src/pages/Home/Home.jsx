@@ -11,13 +11,13 @@ const Home = () => {
           <div>
             <ul>
               <li>
-                <a className="acc" href="/">Accueil</a>
+                <a className="acc" href="/">Home</a>
               </li>
               <li>
-                <a className="acc" href="/login">Connexion</a>
+                <a className="acc" href="/login">Login</a>
               </li>
               <li>
-                <a className="acc" href="/register">Inscription</a>
+                <a className="acc" href="/register">Signup</a>
               </li>
             </ul>
           </div>
@@ -25,11 +25,15 @@ const Home = () => {
       </nav>
 
       <div className="data">
-        <h1 className="title">Bienvenue sur FastDelivery</h1>
+        <h1 className="title">Welcome to FastDelivery</h1>
         <p className="para">
-          Fournisseur de services logistiques intégrés axés sur l'humain
+          Human-centric integrated logistics service provider
         </p>
-        <a className="comm" href="/register">Commence maintenant</a>
+        <a className="comm" href="/register">Start now</a>
+      </div>
+      <div className="pngg">
+        <img className="box" src="/assets/box.png" alt="" />
+        <img className="camio" src="/assets/camio.png" alt="" />
       </div>
     </div>
   );

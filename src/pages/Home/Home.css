@@ -31,3 +31,52 @@ li a{
     font-weight: 700;
     font-size: 17px;
 }
+li a:hover{
+    color: #000;
+}
+.title{
+    position: relative;
+    left: 100px;
+    top: 100px;
+    font-weight: 700;
+    color: linear-gradient(to right, #ff0000d0 ,#000);
+    width: 100vh;
+}
+.para{
+    position: relative;
+    left: 100px;
+    top: 120px;
+    font-weight: 500;
+    color: #5d4646;
+    width: 100vh;
+}
+.comm{
+    position: relative;
+    left: 100px;
+    top: 140px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    background-color: #ff0000;
+    border: 1.5px solid #fff;
+    border-radius: 50px;
+    width: 100vh;
+}
+.comm:hover{
+    background-color: #000000;
+}
+.pngg{
+    display: flex;
+}
+.box{
+    width: 500px;
+    height: 300px;
+    position: relative;
+    top: 230px;
+}
+.camio{
+    position: relative;
+    left: 270px;
+    top: 100px;
+}
