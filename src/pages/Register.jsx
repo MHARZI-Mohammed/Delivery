@@ -41,84 +41,71 @@ const Register = () => {
   };
 
   return (
-    <div className="container-fluid all">
-      <div className="row justify-content-center">
-        <div className="col-md-6 ">
-          <div className="card cart">
-            <div className="card-body bagform">
-              <h2 className="card-title text-center text-white">Inscription</h2>
-              <form onSubmit={handleSubmit}>
-                <div className="mb-3">
-                  <label htmlFor="name" className="form-label">
-                    Nom
-                  </label>
-                  <input
-                    type="text"
-                    className={`form-control ${errors.name ? "is-invalid" : ""}`}
-                    id="name"
-                    placeholder="Entrez votre nom"
-                    value={formData.name}
-                    onChange={(e) =>
-                      setFormData({ ...formData, name: e.target.value })
-                    }
-                    required
-                  />
-                  {errors.name && (
-                    <div className="invalid-feedback">{errors.name}</div>
-                  )}
-                </div>
-
-                <div className="mb-3">
-                  <label htmlFor="email" className="form-label">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    className={`form-control ${errors.email ? "is-invalid" : ""}`}
-                    id="email"
-                    placeholder="Entrez votre email"
-                    value={formData.email}
-                    onChange={(e) =>
-                      setFormData({ ...formData, email: e.target.value })
-                    }
-                    required
-                  />
-                  {errors.email && (
-                    <div className="invalid-feedback">{errors.email}</div>
-                  )}
-                </div>
-
-                <div className="mb-3">
-                  <label htmlFor="password" className="form-label">
-                    Mot de passe
-                  </label>
-                  <input
-                    type="password"
-                    className={`form-control ${errors.password ? "is-invalid" : ""}`}
-                    id="password"
-                    placeholder="Entrez votre mot de passe"
-                    value={formData.password}
-                    onChange={(e) =>
-                      setFormData({ ...formData, password: e.target.value })
-                    }
-                    required
-                  />
-                  {errors.password && (
-                    <div className="invalid-feedback">{errors.password}</div>
-                  )}
-                </div>
-
-                <button type="submit" className="btn btn-primary w-100">
-                  S'inscrire
-                </button>
-              </form>
-              <div className="text-center mt-3">
-                <p className="text-white">
-                  Déjà inscrit ? <a className="text-white" href="/login">Se connecter</a>
-                </p>
-              </div>
-            </div>
+    <div className="page">
+      <div className="register-card">
+        <h2 className="title">Inscription</h2>
+        <form onSubmit={handleSubmit} className="form">
+          <div className="form-group">
+            <label htmlFor="name">Nom</label>
+            <input
+              type="text"
+              id="name"
+              className={errors.name ? "input error" : "input"}
+              placeholder="Entrez votre nom"
+              value={formData.name}
+              onChange={(e) =>
+                setFormData({ ...formData, name: e.target.value })
+              }
+              required
+            />
+            {errors.name && <span className="error-message">{errors.name}</span>}
           </div>
+
+          <div className="form-group">
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              className={errors.email ? "input error" : "input"}
+              placeholder="Entrez votre email"
+              value={formData.email}
+              onChange={(e) =>
+                setFormData({ ...formData, email: e.target.value })
+              }
+              required
+            />
+            {errors.email && (
+              <span className="error-message">{errors.email}</span>
+            )}
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="password">Mot de passe</label>
+            <input
+              type="password"
+              id="password"
+              className={errors.password ? "input error" : "input"}
+              placeholder="Entrez votre mot de passe"
+              value={formData.password}
+              onChange={(e) =>
+                setFormData({ ...formData, password: e.target.value })
+              }
+              required
+            />
+            {errors.password && (
+              <span className="error-message">{errors.password}</span>
+            )}
+          </div>
+
+          <button type="submit" className="btn">
+            S'inscrire
+          </button>
+        </form>
+
+        <div className="footer-text">
+          <p>
+            Déjà inscrit ? <a href="/login">Se connecter</a>
+          </p>
         </div>
       </div>
     </div>
