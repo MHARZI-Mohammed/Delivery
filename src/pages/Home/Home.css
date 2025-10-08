@@ -1,5 +1,5 @@
 .all{
-    background: linear-gradient(to right, #fff, #cb9f56);
+    background: linear-gradient(to left, #fff, #cb9f56);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100vh;
 }
@@ -31,14 +31,14 @@ li a{
     font-weight: 700;
     font-size: 17px;
     padding: 10px 20px;
-    background-color: #ff898b;
+    background-color: #ffffff;
     border-radius: 50px;
     border: 2px solid #000;
 
 }
 li a:hover{
     color: #000;
-    background-color: #fff;
+    background-color: #cb9f56;
 }
 .title {
     position: relative;
@@ -47,13 +47,7 @@ li a:hover{
     font-weight: 700;
     font-size: 3rem;
     width: 100vh;
-
-    background: linear-gradient(270deg, #ff0000d0, #000, #ff0000d0);
-    background-size: 400% 400%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    animation: gradientMove 5s ease infinite;
+    color: #000000;
 }
 
 @keyframes gradientMove {
