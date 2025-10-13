@@ -44,15 +44,15 @@ const Register = () => {
   return (
     <div className="page">
       <div className="register-card">
-        <h2 className="title1">Inscription</h2>
+        <h2 className="title1">Registration</h2>
         <form onSubmit={handleSubmit} className="form">
           <div className="form-group">
-            <label htmlFor="name">Nom</label>
+            <label htmlFor="name">Name</label>
             <input
               type="text"
               id="name"
               className={errors.name ? "input error" : "input"}
-              placeholder="Entrez votre nom"
+              placeholder="Enter your name"
               value={formData.name}
               onChange={(e) =>
                 setFormData({ ...formData, name: e.target.value })
@@ -68,7 +68,7 @@ const Register = () => {
               type="email"
               id="email"
               className={errors.email ? "input error" : "input"}
-              placeholder="Entrez votre email"
+              placeholder="Enter your email"
               value={formData.email}
               onChange={(e) =>
                 setFormData({ ...formData, email: e.target.value })
@@ -81,12 +81,12 @@ const Register = () => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="password">Mot de passe</label>
+            <label htmlFor="password">Password</label>
             <input
               type="password"
               id="password"
               className={errors.password ? "input error" : "input"}
-              placeholder="Entrez votre mot de passe"
+              placeholder="Enter your password"
               value={formData.password}
               onChange={(e) =>
                 setFormData({ ...formData, password: e.target.value })
@@ -99,13 +99,13 @@ const Register = () => {
           </div>
 
           <button type="submit" className="btn">
-            S'inscrire
+            Register
           </button>
         </form>
 
         <div className="footer-text">
           <p>
-            Déjà inscrit ? <a href="/login">Se connecter</a>
+            Already registered? <a href="/login">Login</a>
           </p>
         </div>
       </div>
