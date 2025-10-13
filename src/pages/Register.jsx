@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./Register.css";
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -13,18 +14,18 @@ const Register = () => {
   const validateForm = () => {
     let formErrors = {};
     if (!formData.name.trim()) {
-      formErrors.name = "Le nom est requis.";
+      formErrors.name = "Name is required.";
     }
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!formData.email) {
-      formErrors.email = "L'email est requis.";
+      formErrors.email = "Email is required.";
     } else if (!emailRegex.test(formData.email)) {
-      formErrors.email = "L'email est invalide.";
+      formErrors.email = "The email is invalid.";
     }
     if (!formData.password) {
-      formErrors.password = "Le mot de passe est requis.";
+      formErrors.password = "Password is required.";
     } else if (formData.password.length < 6) {
-      formErrors.password = "Le mot de passe doit contenir au moins 6 caractères.";
+      formErrors.password = "Password must contain at least 6 characters.";
     }
     return formErrors;
   };
@@ -43,7 +44,7 @@ const Register = () => {
   return (
     <div className="page">
       <div className="register-card">
-        <h2 className="title">Inscription</h2>
+        <h2 className="title1">Inscription</h2>
         <form onSubmit={handleSubmit} className="form">
           <div className="form-group">
             <label htmlFor="name">Nom</label>
