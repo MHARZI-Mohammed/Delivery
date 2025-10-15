@@ -19,7 +19,7 @@
 .title1 {
   text-align: center;
   font-size: 1.8rem;
-  color: #333;
+  color: #000;
   margin-bottom: 1.5rem;
 }
 
@@ -36,7 +36,7 @@
 
 label {
   font-weight: 600;
-  color: #333;
+  color: #000;
   margin-bottom: 0.3rem;
 }
 
@@ -67,7 +67,7 @@ label {
 .btn {
   background: linear-gradient(90deg, #ff0000, #ff0000);
   border: none;
-  color: #ffffff;
+  color: #fff;
   font-weight: 600;
   font-size: 1rem;
   padding: 10px 0;

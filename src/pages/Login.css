@@ -1,0 +1,92 @@
+/* Container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to left, #fff, #cb9f56);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Card */
+.login-card {
+  background: #fff;
+  width: 380px;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Title */
+.login-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #000;
+}
+
+/* Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Labels & Inputs */
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-group input {
+  padding: 10px 12px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #2575fc;
+  outline: none;
+  box-shadow: 0 0 6px rgba(37, 117, 252, 0.4);
+}
+
+/* Button */
+.login-button {
+  background: linear-gradient(90deg, #ff0000, #ff0000);
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.login-button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Error Message */
+.error-message {
+  color: #ff4d4d;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Register link */
+.register-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.register-link a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+}
