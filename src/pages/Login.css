@@ -86,7 +86,8 @@ input:focus {
 }
 
 .register-link a {
-  color: #fff;
+  color: #000000;
   font-weight: bold;
   text-decoration: underline;
+  text-decoration: none;
 }

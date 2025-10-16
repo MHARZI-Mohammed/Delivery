@@ -17,21 +17,21 @@ const Login = () => {
     ) {
       navigate("/Reservation");
     } else {
-      setError("Email ou mot de passe incorrect.");
+      setError("Incorrect email or password.");
     }
   };
 
   return (
     <div className="login-container">
       <div className="login-card">
-        <h2 className="login-title">Connexion</h2>
+        <h2 className="login-title">Login</h2>
         <form onSubmit={handleSubmit} className="login-form">
           <div className="form-group">
             <label htmlFor="email">Email</label>
             <input
               type="email"
               id="email"
-              placeholder="Entrez votre email"
+              placeholder="Enter your email"
               value={formData.email}
               onChange={(e) =>
                 setFormData({ ...formData, email: e.target.value })
@@ -41,11 +41,11 @@ const Login = () => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="password">Mot de passe</label>
+            <label htmlFor="password">Password</label>
             <input
               type="password"
               id="password"
-              placeholder="Entrez votre mot de passe"
+              placeholder="Enter your password"
               value={formData.password}
               onChange={(e) =>
                 setFormData({ ...formData, password: e.target.value })
@@ -57,13 +57,13 @@ const Login = () => {
           {error && <p className="error-message">{error}</p>}
 
           <button type="submit" className="login-button">
-            Se connecter
+            Login
           </button>
         </form>
 
         <div className="register-link">
           <p>
-            Pas encore inscrit ? <a href="/register">Créer un compte</a>
+            Not registered yet? <a href="/register">Create an account</a>
           </p>
         </div>
       </div>
