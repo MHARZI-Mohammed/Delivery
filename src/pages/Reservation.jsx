@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { getFromLocalStorage, saveToLocalStorage } from "../services/localStorage";
-import "./Reservation.css";
+// import "./Reservation.css";
 
 const Reservation = () => {
   const navigate = useNavigate();
