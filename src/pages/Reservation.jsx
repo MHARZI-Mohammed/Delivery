@@ -60,11 +60,11 @@ const Reservation = () => {
           </select>
         </div>
         <div>
-          <label>Nom</label>
+          <label>Name</label>
           <input type="text" name="name" value={reservationDetails.name} onChange={handleInputChange} placeholder="Your name"/>
         </div>
         <div>
-          <label>Ville</label>
+          <label>City</label>
           <input type="text" name="Ville" value={reservationDetails.Ville} onChange={handleInputChange} placeholder="City"/>
         </div>
         <div>
